@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+
+.container{
+    background-color: white;
+    height: 370px;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px rgba(101, 102, 103, 0.3);
+}
+.container h2{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d4dbe5;
+    color: rgba(0, 0, 0, 0.655);
+}
+li{
+    list-style: none;
+}
+
+.container .input-b input{
+    color: black;
+    height: 30px;
+    width: 380px;
+    padding: 10px;
+    border-radius: 7px;
+    outline: none;
+    border: 2px solid #d4dbe5;
+}
+/* .container .input-b{
+    position: relative;
+} */
+.container .input-b span{
+    position: relative;
+    left: 355px;
+    bottom: 40px;
+    color: #b4b9c0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.container .input-b span:active{
+    transform: scale(0.95);
+}
+
+
+.container .pass-indicator{
+    position: relative;
+    bottom: 20px;
+    background-color: #dfdfdf;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+}
+.container .pass-len input[type='range']{
+    width: 100%;
+}
+
+.container .pass-len .pass-details{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.container .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.container .button button{
+    height: 50px;
+    width: 550px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    box-shadow: 2px 5px 20px rgba(137, 43, 226, 0.63);
+    transition: transform 0.3s ease;
+}
+.container .button button:active{
+    transform: scale(0.95);
+}
+
+.pass-details span{
+    color: rgba(0, 0, 0, 0.655);
+}
+
+.container .pass-settings{
+    color: rgba(0, 0, 0, 0.655);
+}
+.container .pass-settings .options{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.container .pass-settings .options .option{
+    width: 200px;
+    color: rgba(0, 0, 0, 0.655);
+}
+
+.container .pass-settings .options .option:first-child{
+    pointer-events: none;
+}
+
+.container .pass-settings .options .option:first-child input{
+    opacity: 0.5;
+}
